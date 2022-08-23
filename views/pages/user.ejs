@@ -20,13 +20,13 @@
             <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNy1hZXctMTExXzMuanBn.jpg" alt="">
         </div>
         <span class="profilename">
-            <div id="firstname">Rajan</div>
-            <div id="lastname">Jha</div>
+            <div id="firstname"><%= user[0].firstname %></div>
+            <div id="lastname"><%= user[0].lastname %></div>
         </span>
         <span class="username">
-            @<div id="dispalyusername">rajan123</div>
+            @<div id="dispalyusername"><%= user[0].username %></div>
         </span>
-        <div class="emailid">rajanjhasndelhi@gmail.com</div>
+        <div class="emailid"><%= user[0].emailid %></div>
         <br>
         <a href="/signout"><button class="logout" > log out </button></a>
     </div>  
